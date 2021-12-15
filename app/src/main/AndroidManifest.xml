@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Memo">
         <activity
+            android:name=".CancelPopup"
+            android:exported="false" />
+        <activity
+            android:name=".ReWriteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".Add"
             android:exported="false" />
         <activity

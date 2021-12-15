@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -69,6 +70,18 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
                 mcontext.startActivity(intent);
             }
         });
+
+        /*
+        holder.delete_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mcontext, CacelPopup.class);
+                intent.putExtra("key",holder.date.getText().toString());
+                intent.putExtra("postion",position);
+                mcontext.startActivityForResult(intent, 201);
+                Log.d("Adapter", "삭제 버튼 누름");
+            }
+        });*/
     }
 
 

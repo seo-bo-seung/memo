@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Add">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#007381">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:id="@+id/btn_back"
+            android:src="@drawable/ic_baseline_arrow_white_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="스티커 메모"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:id="@+id/btn_check"
+            android:src="@drawable/ic_baseline_check_24"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="제목"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_memo_title"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="제목을 입력해주세요"
+            android:inputType="textPersonName"/>
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_memo_content"
+        android:layout_weight="1"
+        android:hint="내용을 입력하세요"
+        android:gravity="top"
+        android:inputType="textPersonName"/>
+
+
+
+</LinearLayout>
